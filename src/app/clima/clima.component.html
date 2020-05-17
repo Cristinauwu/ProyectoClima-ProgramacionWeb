@@ -1,0 +1,31 @@
+<div *ngIf="!loaded">
+    <p>GARDANDO INFORMACIÓN</p>
+    </div>
+<div *ngIf="loaded">
+        <div class="container" >
+            <div class="row justify-content-center">
+                <div  class=" class p-2 m-4 col-lg-4 col-md-6" *ngFor="let i of Clima1">
+                    <p>
+                        {{i.date | date:'EEEE'}} <br>
+                        Fecha: {{i.date | date:'longDate'}} <br>
+                       <img  width="60" height="60"  src={{getImage(i.weather)}}> <br>
+                        Maxima: {{i.temp2m.max}}° <img  width="20" height="20"  src="https://image.flaticon.com/icons/png/512/1684/1684426.png"> <br>
+                        Minima: {{i.temp2m.min}}° <img  width="20" height="20"  src="https://image.flaticon.com/icons/png/512/1684/1684425.png"> <br>  
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="container" >
+            <div class="row justify-content-center">
+                <div  class=" p-2 class m-4 col-lg-4 col-md-6" *ngFor="let i of Clima">
+                    <p>
+                        {{i.date | date:'EEEE'}} <br>
+                        Fecha: {{i.date | date:'longDate'}} <br>
+                        <img  width="60" height="60"  src={{getImage(i.weather)}}> <br>
+                        Maxima: {{i.temp2m.max}}° <img  width="20" height="20"  src="https://image.flaticon.com/icons/png/512/1684/1684426.png"> <br>
+                        Minima: {{i.temp2m.min}}° <img  width="20" height="20"  src="https://image.flaticon.com/icons/png/512/1684/1684425.png"> <br>  
+                    </p>
+                </div>
+            </div>
+        </div>
+</div>    

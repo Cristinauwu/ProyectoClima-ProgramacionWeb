@@ -1,0 +1,9 @@
+.class{
+    border-radius: 1.2em 1.2em 1.2em 1.2em;
+    align-items: center;
+}
+p{
+    font-family: monospace;
+    font-size: x-large;
+    text-align: center;
+}
