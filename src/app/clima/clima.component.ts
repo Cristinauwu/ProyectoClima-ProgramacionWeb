@@ -67,4 +67,38 @@ export class ClimaComponent implements OnInit {
     }
     return Image;
   }
+  
+  getDay(str){
+    var Day:string;
+    switch(str){
+      case 'Monday':
+          Day='Lunes';
+        break;
+
+      case 'Tuesday':
+          Day='Martes';
+        break;
+
+      case 'Wednesday':
+          Day='Miércoles';
+        break;
+      
+      case 'Thursday':
+          Day='Jueves';
+        break;
+        
+      case 'Friday':
+          Day='Viernes';
+        break;
+
+      case 'Saturday':
+          Day='Sábado';
+        break;
+        
+      case 'Sunday':
+         Day='Domingo';
+        break;
+    }
+    return Day;
+  }
 }
